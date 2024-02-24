@@ -19,7 +19,7 @@ python main.py
 ```
 ## 2. 选择2：构建Docker镜像
 ```sh
-docker build -t bge-m3-api .
+docker build -t m3e-small-api .
 ```
 CPU
 ```sh
