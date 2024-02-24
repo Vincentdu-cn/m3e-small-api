@@ -9,7 +9,7 @@ m3e-small Embeddings api by FastAPI
 
 ```python
 from huggingface_hub import snapshot_download
-snapshot_download(repo_id="BAAI/m3e-small",cache_dir="./cache", local_dir="models/m3e-small")
+snapshot_download(repo_id="moka-ai/m3e-small",cache_dir="./cache", local_dir="models/m3e-small")
 print("======download successful=====")
 ```
 
