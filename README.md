@@ -1,8 +1,8 @@
-# bge-api
+# m3e-small-api
 
-BGE-large Embeddings api by FastAPI
+m3e-small Embeddings api by FastAPI
 
-> Refer to **m3e-large-api**
+> Refer to **bge-api**
 
 ## Quick Start
 
@@ -27,7 +27,7 @@ curl --location --request POST 'http://127.0.0.1/v1/embeddings' \
 --header 'Authorization: Bearer sk-aaabbbcccdddeeefffggghhhiiijjjkkk' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-  "model": "bge-large-zh-v1.5",
+  "model": "m3e-small",
   "input": ["github是什么"]
 }'
 ```
@@ -36,13 +36,10 @@ curl --location --request POST 'http://127.0.0.1/v1/embeddings' \
 
 ```python
 from huggingface_hub import snapshot_download
-snapshot_download(repo_id="BAAI/bge-large-zh-v1.5",cache_dir="./cache", local_dir="models/bge-large-zh-v1.5")
+snapshot_download(repo_id="BAAI/m3e-small",cache_dir="./cache", local_dir="models/m3e-small")
 print("======download successful=====")
 ```
 
-```sh
-rm -r ./cache
-```
 
 ```sh
 pip install -r requirements.txt
