@@ -35,7 +35,7 @@ def load_model():
     print(
         f"本次加载模型的设备为：{'GPU: ' + torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU.'}"
     )
-    return SentenceTransformer("./models/m3e-small", device=device)
+    return SentenceTransformer("./models/bge-m3", device=device)
 
 
 model = load_model()
